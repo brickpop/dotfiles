@@ -77,4 +77,52 @@ Give it a better look by running:
 
 	cat screenrc >> ~/.screenrc
 
+## Utilities
+Other commands that you can now run on bash:
+### extract
+Pass it any any package file and this command will do the trick for you (tar.bz2, tar.gz, bz2, rar, gz, tar, tbz2, tgz, zip, Z and 7z)
+
+	extract <file-name>
+
+### files
+Enumerate all the files inside the current directory. Pass it a number to limit the depth to explore (optional)
+
+	files 2
+
+
+### folders
+Enumerate all the folders inside the current directory. Pass it a number to limit the depth to explore (optional)
+
+	folders 1
+	
+### fawk
+Pipe data to this command to get a specific column. This will use awk to return the N-th column of the input passed to it.
+
+	$ l / | fawk 3
+	
+	root
+	root
+	root
+	root
+	root
+	root
+	root
+	root
+	root
+	root
+	root
+	root
+	root
+	root
+	root
+	root
+	root
+	root
+	root
+	root
+	root
+	root
+	root
+	root
+	root
 
