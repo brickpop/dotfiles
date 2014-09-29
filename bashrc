@@ -6,7 +6,7 @@ alias la='ls -lhFa'
 alias mydiff='diff -u --show-c-function -s $1 $2'
 
 # colorful prompt
-$HOST=$HOSTNAME # Change the name to your convenience
+HOST=$HOSTNAME # Change the name to your convenience
 
 PS1="\[\033[0;37m\]\$([[ \$? != 0 ]] && echo \"[\[\033[0;31m\]\342\234\227\[\033[0;37m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[0;31m\]root@$HOST'; else echo '\[\033[0;33m\]\u\[\033[0;37m\]@\[\033[0;96m\]$HOST'; fi)\[\033[0;37m\]]\342\224\200[\[\033[0;32m\]\w\[\033[0;37m\]]\n\[\033[0;37m\]$ \[\033[0m\]"
 
