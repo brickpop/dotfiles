@@ -75,7 +75,7 @@ Vim now comes with syntax highlighting and a status bar with convenient informat
 
 Give it a better look by running:
 
-	cat screenrc >> ~/.screenrc
+	cat vimrc >> ~/.vimrc
 
 ## Utilities
 Other commands that you can now run on bash:
