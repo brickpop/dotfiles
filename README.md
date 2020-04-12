@@ -1,4 +1,4 @@
-# Linux-bp
+# Linux dot files
 Linux-bp is a boilerplate to help you set up a comfortable Linux session with minimal effort.
 
 The provided environment is useful both for developers working on remote environments and for system administrators. 
