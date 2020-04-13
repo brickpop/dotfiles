@@ -1,0 +1,54 @@
+@binding-set gtk-alt-cut-copy-paste
+{
+        /*bind "<super>x" { "cut-clipboard" () };*/
+        /*bind "<super>c" { "copy-clipboard" () };*/
+        /*bind "<super>v" { "paste-clipboard" () };*/
+        /*bind "<super>z" { "undo" () };*/
+
+        bind "<alt>x" { "cut-clipboard" () };
+        bind "<alt>c" { "copy-clipboard" () };
+        bind "<alt>v" { "paste-clipboard" () };
+        bind "<alt>z" { "undo" () };
+}
+
+* {
+        -gtk-key-bindings: gtk-alt-cut-copy-paste
+}
+
+/* ---- */
+
+@binding-set my-text-and-tree-view-bindings
+{
+    bind "<alt>a" { "select-all" (1) };
+    bind "<alt>x" { "cut-clipboard" () };
+    bind "<alt>c" { "copy-clipboard" () };
+    bind "<alt>v" { "paste-clipboard" () };
+    bind "<alt>z" { "undo" () };
+}
+
+textview {
+  -gtk-key-bindings: my-text-and-tree-view-bindings;
+}
+
+treeview {
+  -gtk-key-bindings: my-text-and-tree-view-bindings;
+}
+
+/* ---- */
+
+@binding-set my-entry-bindings
+{
+    bind "<alt>a" {
+        "move-cursor" (paragraph-ends, -1, 0)
+        "move-cursor" (paragraph-ends,  1, 1)
+    };
+    bind "<alt>x" { "cut-clipboard" () };
+    bind "<alt>c" { "copy-clipboard" () };
+    bind "<alt>v" { "paste-clipboard" () };
+    bind "<alt>z" { "undo" () };
+}
+
+entry {
+  -gtk-key-bindings: my-entry-bindings;
+}
+

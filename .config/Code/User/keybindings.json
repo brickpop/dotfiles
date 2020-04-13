@@ -1,0 +1,14 @@
+[
+    {
+        "key": "alt+a",
+        "command": "editor.action.selectAll", "when": "textInputFocus"
+    },
+    {
+        "key": "alt+z",
+        "command": "undo", "when": "textInputFocus && !editorReadOnly"
+    },
+    {
+        "key": "shift+alt+z",
+        "command": "redo", "when": "textInputFocus && !editorReadOnly"
+    }
+]
