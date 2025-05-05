@@ -1,0 +1,12 @@
+[user]
+    name = x
+    email = x@x
+    signingkey = ssh-ed25519 xxx id@ed25519
+
+# [pull]
+#    rebase = false
+
+[gpg]
+   format = ssh
+[commit]
+   gpgsign = true

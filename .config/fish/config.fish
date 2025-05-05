@@ -1,3 +1,17 @@
+if status is-interactive
+    # Commands to run in interactive sessions can go here
+end
+
+function l
+   ls -lhGF $argv
+end
+function la
+   ls -lhGFa $argv
+end
+function glog
+   git log --all --oneline --graph
+end
+
 alias g='git'
 alias ga='git add'
 alias gaa='git add --all'
@@ -47,7 +61,4 @@ alias gsps='git show --pretty=short --show-signature'
 alias gsr='git svn rebase'
 alias gss='git status -s'
 alias gst='git status'
-
-alias l='ls -lhGF'
-alias la='ls -lhFa'
 alias mydiff='diff -u --show-c-function -s $1 $2'
