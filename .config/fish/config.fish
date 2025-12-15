@@ -11,6 +11,10 @@ end
 function glog
    git log --all --oneline --graph
 end
+function gemini
+  set VERSION "0.20.2"
+  podman run -it --rm -v $PWD:/home/node/code:Z -e GEMINI_API_KEY=(jq .apiKey ~/.gemini/settings.json | xargs echo) -e DEFAULT_UID=$(id -u) -e DEFAULT_GID=$(id -g) -w /home/node/code us-docker.pkg.dev/gemini-code-dev/gemini-cli/sandbox:$VERSION
+end
 
 alias g='git'
 alias ga='git add'
@@ -42,6 +46,7 @@ alias gpu='git push upstream'
 alias gpv='git push -v'
 alias gr='git remote'
 alias gra='git remote add'
+alias grv='git remote -v'
 alias grb='git rebase'
 alias grba='git rebase --abort'
 alias grbc='git rebase --continue'
